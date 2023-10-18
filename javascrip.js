@@ -63,6 +63,15 @@ function printContacts(contacts2) {
 }
 // Publica tu código en Github, en tu repositorio contact-list crea un branch llamado project-1 y compártelo con nosotros. 👍🏼⬇️
 
+// Añade una función que permita actualizar un contacto
 
+function updateContact(contact) {
+  // obtener el indice del contacto a actualizar
+  const index = contacts.findIndex(c => c.id === contact.id);
+  // reemplazar el contacto en la lista de contactos
+  contacts[index] = contact;
+  // devolver el nuevo contacto
+  return contacts[index];
+}
 
 
